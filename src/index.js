@@ -26,7 +26,7 @@ const paint = ( ctx: CanvasRenderingContext2D, l: number ) : void => {
     ctx.fillStyle = quantumizedColor[0|(Math.random()*quantumizedColor.length)]
 
     ctx.beginPath()
-    ctx.arc(l/2, l/2, l/2, 0, Math.PI*2)
+    ctx.arc(l/2, l/2, l/2.5, 0, Math.PI*2)
     ctx.fill()
 
 
@@ -35,7 +35,7 @@ const paint = ( ctx: CanvasRenderingContext2D, l: number ) : void => {
     // ctx.beginPath()
     // ctx.fillText('Hello', l*0.2, l/2)
 
-    const u=0.7
+    const u=0.6
 
     ctx.save()
     ctx.beginPath()
