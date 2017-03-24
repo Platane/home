@@ -1,0 +1,48 @@
+.container{
+    display         : flex;
+    flex-direction  : row;
+}
+
+.labelList{
+    display         : flex;
+    flex-direction  : column;
+    margin-right    : 6px;
+}
+.label{
+    height          : 40px;
+    display         : flex;
+    justify-content : flex-start;
+    align-items     : center;
+}
+.timeLineName{}
+.timeLineTitle{}
+
+.lines{
+    flex-grow       : 1;
+}
+.line{}
+.backLine_future,
+.backLine{
+    stroke-width    : 2px;
+    stroke-linecap  : round;
+    stroke-linejoin : round;
+}
+.backLine_future{
+    stroke-width    : 1px;
+    stroke-dasharray: 10px 3px;
+}
+.event{}
+.tic{
+    stroke-width    : 8px;
+    stroke-linejoin : round;
+    stroke-linecap  : round;
+}
+
+.rulers{}
+.nowGroup{}
+.nowCursor{
+    stroke          : #333;
+    stroke-width    : 1px;
+    stroke-linecap  : round;
+    stroke-linejoin : round;
+}

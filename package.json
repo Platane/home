@@ -1,0 +1,38 @@
+{
+    "name": "home",
+    "version": "0.1.0",
+    "dependencies": {
+        "react": "~15.4.0",
+        "react-dom": "~15.4.0",
+        "react-motion": "~0.4.7"
+    },
+    "devDependencies": {
+        "autoprefixer": "^6.3.6",
+        "babel-cli": "6.x",
+        "babel-core": "6.x",
+        "babel-loader": "6.x",
+        "babel-plugin-transform-class-properties": "^6.22.0",
+        "babel-plugin-transform-react-jsx": "^6.23.0",
+        "babel-preset-es2015": "6.x",
+        "babel-preset-flow": "~6.23.0",
+        "babel-preset-react": "~6.23.0",
+        "babel-preset-stage-1": "6.x",
+        "css-loader": "^0.27.3",
+        "file-loader": "^0.10.1",
+        "flow-bin": "~0.42.0",
+        "flow-typed": "~2.0.0",
+        "html-loader": "0.4.x",
+        "html-minify-loader": "^1.1.0",
+        "postcss-cssnext": "^2.7.0",
+        "postcss-loader": "^1.3.3",
+        "raw-loader": "^0.5.1",
+        "style-loader": "^0.16.0",
+        "webpack": "~2.3.1",
+        "webpack-dev-server": "~2.4.0"
+    },
+    "scripts": {
+        "start": "webpack-dev-server --port 8082 --inline --devtool source-map --content-base ./ -d",
+        "build": "rm -r -f -d dist/ && env NODE_ENV=production webpack && cp ./manifest.json ./dist/manifest.json",
+        "build:dev": "webpack"
+    }
+}
